@@ -1,0 +1,7 @@
+<div class="show-div">
+  <p><span class="show-content">Name: </span><%= @user.name %></p>
+  <p><span class="show-content">Email: </span><%= @user.email %></p>
+  <%= link_to "Edit", edit_user_path(@user), class: "button" %>
+  <%= link_to "Delete", user_path(@user), class: "button", method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= link_to 'Back to Users List', users_path, class: "button" %>
+</div>
